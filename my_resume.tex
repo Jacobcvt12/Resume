@@ -4,16 +4,22 @@
 % Date: 4-26-14       %
 %%%%%%%%%%%%%%%%%%%%%%%
 
+% define icons to be used from fontawesome
+
 \def\faGithub{\symbol{"F09B}}
 \def\faLinkedin{\symbol{"F0E1}}
 \def\faEnvelope{\symbol{"F003}}
 \def\faPhone{\symbol{"F095}}
 
-\documentclass[]{friggeri-cv}
-\usepackage{fontspec}
-\usepackage{fontawesome}
+\documentclass[]{friggeri-cv} % use friggeri resume template
+\usepackage{fontspec} % required for fontawesome
+\usepackage{fontawesome} % required for icons used in about section
 
 \begin{document}
+
+% create header of format
+% first last
+% title
 
 \header{jacob}{carey}{data analyst} 
 
@@ -29,8 +35,9 @@ Bethesda, MD 20852
 ~
 \href{tel:14342039317}{\faPhone +1 (434) 203 9317}
 \href{mailto:jacobcvt12@gmail.com}{\faEnvelope jacobcvt12}
+\href{mailto:jacobcvt12@gmail.com}{@gmail.com}
 \href{https://github.com/jacobcvt12}{\faGithub jacobcvt12}
-\href{https://www.linkedin.com/profile/view?id=240148456}{\faLinkedin jacobcvt12}
+\href{https://www.linkedin.com/in/jacobcvt12}{\faLinkedin jacobcvt12}
 \section{skills}
 Modeling \& simulation
 Machine learning
@@ -44,8 +51,11 @@ R, Python, SQL
 C, C++, Bash
 MATLAB, SAS
 \section{tools}
-git
+git, Vim, GCC
 \LaTeX
+\section{environments}
+Debian
+OS X
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -58,9 +68,10 @@ git
 %------------------------------------------------
 \entry
 {2008--2012}
-{Bachelor {\normalfont of Science in }Mathematics}
+{Bachelor {\normalfont of Science in}
+\href{https://www.math.vt.edu/}{Mathematics}}
 {\href{http://www.vt.edu}{Virginia Tech}}
-{3.56 Overall GPA / 3.74 In-Major GPA}
+{Graduated with Honor}
 %------------------------------------------------
 \end{entrylist}
 
@@ -82,7 +93,7 @@ git
 \item Assisted with new Marriott user-centric sort order algorithm
 \item Developed time series model to determine effectiveness of hotel promotions. 
 \item Calculated weekly values of search engine keywords in order to best allocate online marketing funds.
-\item Performed web scraping of external websites in order to provide business insights.
+\item Performed web scraping of external websites to provide business insights.
 \item Worked with datasets greater than one billion rows.
 \item Automated reports using R \& ggplot2 and ETL using Python scripts.
 \end{itemize}
@@ -107,7 +118,7 @@ Used Python to perform server-side calculations.
 {2011}
 {\href{http://www.medschool.vcu.edu}{Virginia Commonwealth University, School of Medicine}}
 {Richmond, Virginia}
-{\emph{Microbiology, Infectious Diseases and Public Health}
+{\emph{Student Research}
 \begin{itemize}
 \renewcommand\labelitemi{--}
 \item Used R programming language to analyze gene expression data and create a gene regulatory network.
