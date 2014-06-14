@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+% Title: Resume       %
+% Author: Jacob Carey %
+% Date: 4-26-14       %
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% define icons to be used from fontawesome
+
+\def\faGithub{\symbol{"F09B}}
+\def\faLinkedin{\symbol{"F0E1}}
+\def\faEnvelope{\symbol{"F003}}
+\def\faPhone{\symbol{"F095}}
+
+\documentclass[]{friggeri-cv} % use friggeri resume template
+\usepackage{fontspec} % required for fontawesome
+\usepackage{fontawesome} % required for icons used in about section
+
+\begin{document}
+
+% create header of format
+% first last
+% title
+
+\header{jacob}{carey}{data analyst} 
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{about}
+5411 McGrath Blvd
+Apt 501
+Bethesda, MD 20852
+~
+\href{tel:14342039317}{\faPhone +1 (434) 203 9317}
+\href{mailto:jacobcvt12@gmail.com}{\faEnvelope jacobcvt12}
+\href{mailto:jacobcvt12@gmail.com}{@gmail.com}
+\href{https://github.com/jacobcvt12}{\faGithub jacobcvt12}
+\href{https://www.linkedin.com/in/jacobcvt12}{\faLinkedin jacobcvt12}
+\section{skills}
+Modeling \& simulation
+Machine learning
+Regression analysis
+Linear programming
+Time series analysis
+Data visualization
+Web scraping
+\section{programming}
+R, Python, SQL
+C, C++, Bash
+MATLAB, SAS
+\section{tools}
+git
+\LaTeX
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2008--2012}
+{Bachelor {\normalfont of Science in}
+\href{https://www.math.vt.edu/}{Mathematics}}
+{\href{http://www.vt.edu}{Virginia Tech}}
+{Graduated with Honor}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014--Now}
+{\href{http://www.marriott.com/}{Marriott International}}
+{Bethesda, Maryland}
+{\emph{Manager, eCommerce Analysis}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Assisted with new Marriott user-centric sort order algorithm
+\item Developed time series model to determine effectiveness of hotel promotions. 
+\item Calculated weekly values of search engine keywords in order to best allocate online marketing funds.
+\item Performed web scraping of external websites to provide business insights.
+\item Worked with datasets greater than one billion rows.
+\item Automated reports using R \& ggplot2 and ETL using Python scripts.
+\end{itemize}
+}
+%------------------------------------------------
+\entry
+{2012--2014}
+{\href{http://www.deloitte.com/}{Deloitte}}
+{Arlington, Virginia}
+{\emph{Data Analyst}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Managed a client-facing team of three consultants in the analysis of datasets greater than one million rows using SAS. 
+Led regular meetings and presented results and data visualizations to key clients and internal stakeholders.
+\item Developed web application to be used by federal agencies to optimize resource allocation. 
+Used Python to perform server-side calculations.
+\item Assisted federal agency in meeting requirements of government act using sample selection and estimation of disbursed grants and transactions.
+\end{itemize}
+}
+%------------------------------------------------
+\entry
+{2011}
+{\href{http://www.medschool.vcu.edu}{Virginia Commonwealth University, School of Medicine}}
+{Richmond, Virginia}
+{\emph{Student Research}
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item Used R programming language to analyze gene expression data and create a gene regulatory network.
+\item Created R package to run analysis on future gene expression datasets
+\end{itemize}
+}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{activities}
+
+\begin{entrylist}
+
+\entry
+{2013--Now}
+{\href{http://www.arlingtonfreeclinic.org}{Arlington Free Clinic}}
+{Arlington, Virginia}
+{Volunteer at Free Clinic and assist with medical treatment and triage of the clinic's patients}
+
+\entry
+{2009--2012}
+{Individual Applied Piano}
+{Blacksburg, Virginia}
+{Study piano in Virginia Tech's \href{http://www.music.vt.edu/}{Music Department}}
+\end{entrylist}
+
+\end{document}
